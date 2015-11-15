@@ -2,9 +2,9 @@
   "name": "inoverourheadsshow.com",
   "version": "1.0.0",
   "description": "Generates web-ready content for inoverourheadsshow.com.",
-  "main": "rss.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "grunt"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,10 @@
   },
   "homepage": "https://github.com/anyweez/inoverourheadsshow.com#readme",
   "dependencies": {
-    "feed": "^0.2.6",
-    "moment": "^2.10.6",
-    "node-normalize-scss": "^1.0.3",
-    "rss": "^1.2.1"
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.1.0",
+    "node-normalize-scss": "^1.0.3"
   }
 }
