@@ -3,8 +3,8 @@ a {
 }
 
 body {
-    background-color: #ddd;
-    padding: .5%;
+    background-color: #dedede;
+    background-blend-mode: color;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -12,12 +12,13 @@ header {
     h1 {
         text-transform: lowercase;
         font-size: 4em;
-        padding: 0;
+        padding: .5% 0 0 1%;
         margin: 0;
+        cursor: pointer;
     }
     h2 {
         text-transform: lowercase;
-        padding: 0;
+        padding: 0 0 0 1%;
         margin: 1% 0 0 0;
     }
     padding-bottom: 1%;
@@ -46,12 +47,13 @@ header {
     li {
         list-style-type: none;
         border-bottom: 1px solid black;
-        padding: 5% 3%;
+        padding: 4% 3%;
         background-color: white;
     }
     li:hover {
         cursor: pointer;
         border-right: 5px solid #1760A9;
+        background-color: #ACC3DB;
     }
     h2 {
         padding: 0;
@@ -66,6 +68,26 @@ header {
         font-weight: normal;
         font-size: 1em;
     }
+    .selected {
+        border-right: 5px solid #1760A9;
+        background-color: #ACC3DB;
+    }
+}
+
+#show-notes {
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    h2 {
+        padding: 0;
+        margin: 0 0 .5% 0;
+    }
+    .recording-ts {
+        font-style: italic;
+        margin-top: 0;
+    }
+}
+
+#content {
+    padding-left: 1%;
 }
 
 p {
@@ -74,4 +96,5 @@ p {
 
 footer {
     text-align: right;
+    padding-right: 1%;
 }

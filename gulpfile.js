@@ -6,7 +6,7 @@ var sass = require('gulp-sass');
 var paths = { in : {
         jade: './views/*.jade',
         scss: './styles/*.scss',
-        js: './appjs/*.js',
+        js: './js/*.js',
     },
     out: {
         html: './public',
@@ -33,7 +33,9 @@ gulp.task('styles', function () {
 });
 
 gulp.task('js', function () {
-
+    return gulp.src(paths.in.js)
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest(paths.out.js));
 });
 
 gulp.task('test', function () {
@@ -43,5 +45,5 @@ gulp.task('test', function () {
 gulp.task('watch', ['templates', 'styles', 'js'], function () {
     gulp.watch(paths.in.jade, ['templates']);
     gulp.watch(paths.in.scss, ['styles']);
-    //    gulp.watch(paths.in.js, ['js']);
+    gulp.watch(paths.in.js, ['js']);
 });
