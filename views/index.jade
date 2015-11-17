@@ -1,3 +1,4 @@
+doctype html
 html
     head
         meta(http-equiv="Content-Type", content="text/html", charset="UTF-8")
@@ -12,22 +13,21 @@ html
         div(id='content')
             div(id='episode-list')
                 ul
-                    li(id="ep3-unknown" class="existing") 
-                        h2 Episode 3
-                        h3 Topic 3
-                    li(id="ep2-yetis") 
-                        h2 Episode 2
-                        h3 Yetis
-                    li(id="ep1-power-steering") 
-                        h2 Episode 1
-                        h3 Power steering
+                    //- Loop through all episodes in reverse order (making it newest first)
+                    each episode, index in podcast.episodes.reverse()
+                        if episode.info.id == podcast.latest.info.id
+                            li(id=episode.info.id, class="selected") 
+                                h2 Episode #{episode.info.number}
+                                h3 #{episode.info.title}
+                        else
+                            li(id=episode.info.id) 
+                                h2 Episode #{episode.info.number}
+                                h3 #{episode.info.title}
                 
             div(id='show-notes')
-                h2 Episode 1: power steering
-                p(class='recording-ts') Recorded on Nov 10, 2015
-                p Show note text. Include a bunch of links, the topic we covered, and our claims.
-                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
-                p Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+                h2 Episode #{podcast.latest.info.number}: #{podcast.latest.info.title}
+                p(class="recording-ts") Recorded on #{podcast.latest.info.pubDate.format('ddd, MMM D, YYYY')}
+                div(id="notes-content")
+                    != podcast.latest.content.text
         
         include ./footer.jade

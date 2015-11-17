@@ -1,41 +1,57 @@
 /* jslint browser: true */
+var moment = require('moment');
+
+/**
+ * Update the main content pane with data from the specified episode.
+ */
+function loadContent(episode) {
+    'use strict'
+    var heading = document.querySelector('#show-notes h2');
+    heading.innerHTML = "Episode " + episode.number + ": " + episode.title;
+
+    var timestamp = document.querySelector('#show-notes .recording-ts');
+    timestamp.innerHTML = "Recorded on " + moment(episode.timestamp).format('ddd, MMM D, YYYY');
+
+    var notes = document.querySelector('#show-notes #notes-content');
+    notes.innerHTML = episode.content;
+}
+
+function highlight(one, all) {
+    for (var i = 0; i < all.length; i++) {
+        all[i].classList.remove('selected');
+    }
+
+    one.classList.add('selected');
+}
 
 /**
  * On page load, fetch all content via AJAX and load the most recent page as soon
  * as it comes back. Set up some other event handlers as well.
  */
 window.addEventListener('load', function () {
-    var content = {
-        'ep1-power-steering': {
-            body: 'Episode 1 text',
-        },
-        'ep2-yetis': {
-            body: 'Episode 2 text',
-        },
-        'ep3-unknown': {
-            body: 'Episode 3 text',
-            latest: true,
-        },
-    };
-    // Fetch content.
+    var content = {};
 
-    // Set up some event handlers on each 
+    var req = new XMLHttpRequest();
+    // Update the content object once the response comes back.
+    req.onload = function (response) {
+        JSON.parse(req.responseText).forEach(function (episode) {
+            content[episode.id] = episode;
+        });
+    };
+    req.open('GET', '/content.json');
+    req.send();
+
+    // Set up some event handlers on each episode item.
     var episodeItems = document.querySelectorAll('#episode-list li');
 
     for (var i = 0; i < episodeItems.length; i++) {
         episodeItems[i].addEventListener('click', function () {
-            document.getElementById('show-notes').innerHTML = content[this.id].body;
-
-            // Remove selected class from anyone who might already have it.
-            for (var j = 0; j < episodeItems.length; j++) {
-                episodeItems[j].classList.remove("selected");
-            }
-
-            // Add it back to just this <li>
-            this.classList.add("selected");
+            loadContent(content[this.id]);
+            highlight(this, episodeItems);
         });
     }
 
+    // The header should reset to the default state.
     document.querySelector('header h1').addEventListener('click', function () {
         // Remove selected class from anyone who might already have it.
         for (var j = 0; j < episodeItems.length; j++) {
@@ -44,8 +60,8 @@ window.addEventListener('load', function () {
 
         for (var key in content) {
             if (content[key].latest) {
-                document.getElementById('show-notes').innerHTML = content[key].body;
-                document.getElementById(key).classList.add("selected");
+                loadContent(content[key]);
+                highlight(document.getElementById(key), episodeItems);
             }
         }
     });
