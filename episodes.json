@@ -1,0 +1,76 @@
+{
+    "series": {
+        "title": "In Over Our Heads",
+        "subtitle": "Epic subtitle",
+        "description": "My, my...it could be anything! Let's be brief though Grut.",
+        "links": {
+            "site": "http://inoverourheadsshow.com",
+            "art": "http://icons.iconarchive.com/icons/hektakun/pokemon/72/143-Snorlax-icon.png",
+            "feed": "http://inoverourheadsshow.com/feed.rss"
+        },
+        "language": "en",
+        "categories": [
+            {
+                "category": "Education"
+            }
+        ],
+        "explicit": false
+    },
+
+    "people": {
+        "webmaster": {
+            "name": "Team",
+            "email": "contact@inoverourheadsshow.com"
+        },
+        "author": {
+            "name": "Seth & Luke",
+            "email": "contact@inoverourheadsshow.com"
+        },
+        "owner": {
+            "name": "Seth & Luke",
+            "email": "contact@inoverourheadsshow.com"
+        }
+    },
+
+    "episodes": [
+        {
+            "info": {
+                "id": "1-power-steering",
+                "number": 1,
+                "title": "Power steering",
+                "description": "Seth and Luke admire power steering, speculate about the Model T, and take some broad swings at how cars work.",
+                "pubDate": "2015-11-17T16:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/1-power-steering.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/1-power-steering.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/1-power-steering.md",
+                    "public": "http://inoverourheadsshow.com/public/shownotes/1-power-steering.html"
+                }
+            }
+        }, {
+            "info": {
+                "id": "2-yetis",
+                "number": 2,
+                "title": "Yetis",
+                "description": "The intrepid hosts discuss evidence for yetis, the history of the legends, and realize how little they know about Scottish people.",
+                "pubDate": "2015-11-19T16:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/2-yetis.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/2-yetis.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/2-yetis.md",
+                    "public": "http://inoverourheadsshow.com/public/shownotes/2-yetis.html"
+                }
+            }
+        }
+    ]
+}
