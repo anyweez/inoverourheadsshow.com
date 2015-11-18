@@ -8,7 +8,8 @@ Audio content is not present in this repo but can be downloaded using a soon-to-
 - **[DONE]** SCSS styling
 - **[DONE]** Gulpfile
 - **[DONE]** RSS generator and validator
+- **[DONE]** Finalize design
+- **[DONE]** Write content
+- **[DONE]** Frontend JS / show notes loading
 - Finalize logo
-- Finalize design
-- Write content
-- Frontend JS / show notes loading
+- Write show notes
