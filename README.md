@@ -1,4 +1,6 @@
 # inoverourheadsshow.com
+![Build status](https://travis-ci.org/anyweez/inoverourheadsshow.com.svg?branch=travis)
+
 Run `gulp` to generate all public-facing content. Content will all be added to the `public/` folder, which can be served directly.
 
 Audio content is not present in this repo but can be downloaded using a soon-to-be-available script.
