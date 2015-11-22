@@ -9,11 +9,13 @@ var paths = { in : {
         jade: './views/*.jade',
         scss: './styles/*.scss',
         js: './js/*.js',
+	images: './images/*',
     },
     out: {
         html: './public',
         css: './public/css',
         js: './public/js',
+	images: './public/images',
     }
 };
 
@@ -43,6 +45,11 @@ gulp.task('js', function () {
         .pipe(browserify())
         .pipe(concat('app.js'))
         .pipe(gulp.dest(paths.out.js));
+});
+
+gulp.task('images', function() {
+    return gulp.src(paths.in.images)
+        .pipe(gulp.dest(paths.out.images));
 });
 
 gulp.task('test', function () {

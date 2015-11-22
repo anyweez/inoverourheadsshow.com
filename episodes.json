@@ -5,7 +5,7 @@
         "description": "Childhood friends Luke Segars and Seth Rushton know each other pretty well, but the rest of life is a mystery. Join them as they try to explain concepts like fog, the stock market, and yetis.",
         "links": {
             "site": "http://inoverourheadsshow.com",
-            "art": "http://icons.iconarchive.com/icons/hektakun/pokemon/72/143-Snorlax-icon.png",
+            "art": "http://inoverourheadsshow.com/images/logo.png",
             "feed": "http://inoverourheadsshow.com/feed.rss"
         },
         "language": "en",
@@ -20,15 +20,15 @@
     "people": {
         "webmaster": {
             "name": "Team",
-            "email": "contact@inoverourheadsshow.com"
+            "email": "inoverourheadsshow@gmail.com"
         },
         "author": {
             "name": "Seth & Luke",
-            "email": "contact@inoverourheadsshow.com"
+            "email": "inoverourheadsshow@gmail.com"
         },
         "owner": {
             "name": "Seth & Luke",
-            "email": "contact@inoverourheadsshow.com"
+            "email": "inoverourheadsshow@gmail.com"
         }
     },
 
@@ -49,7 +49,7 @@
                 },
                 "notes": {
                     "source": "shownotes/1-power-steering.md",
-                    "public": "http://inoverourheadsshow.com/public/shownotes/1-power-steering.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/1-power-steering.html"
                 }
             }
         }, {
@@ -68,7 +68,7 @@
                 },
                 "notes": {
                     "source": "shownotes/2-yetis.md",
-                    "public": "http://inoverourheadsshow.com/public/shownotes/2-yetis.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/2-yetis.html"
                 }
             }
         }
