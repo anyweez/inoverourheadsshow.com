@@ -19,7 +19,7 @@ var paths = { in : {
     }
 };
 
-gulp.task('default', ['templates', 'styles', 'js', 'test']);
+gulp.task('default', ['templates', 'styles', 'js', 'images', 'test']);
 
 gulp.task('templates', function () {
     return gulp.src(paths.in.jade)
