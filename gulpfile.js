@@ -21,7 +21,18 @@ var paths = { in : {
 
 gulp.task('default', ['templates', 'styles', 'js', 'images', 'test']);
 
-gulp.task('templates', function () {
+gulp.task('templates', function (done) {
+    pods.read('episodes.json', function(podcast) {
+        return gulp.src(paths.in.jade)
+            .pipe(jade({
+                locals: {
+                    podcast: podcast,
+                }
+            }))
+            .pipe(gulp.dest(paths.out.html));
+        done();
+    });
+/*
     return gulp.src(paths.in.jade)
         .pipe(jade({
             locals: {
@@ -29,6 +40,7 @@ gulp.task('templates', function () {
             }
         }))
         .pipe(gulp.dest(paths.out.html));
+*/
 });
 
 gulp.task('styles', function () {
