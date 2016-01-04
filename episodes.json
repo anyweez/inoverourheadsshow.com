@@ -71,6 +71,64 @@
                     "public": "http://inoverourheadsshow.com/shownotes/2-yetis.html"
                 }
             }
+        }, {
+            "info": {
+                "id": "3-french-revolution",
+                "number": 3,
+                "title": "French Revolution",
+		"description": "Luke and Seth bravely explore the causes, costs, and after effects of the French Revolution along with Marie Antoinette's diet.",
+                "pubDate": "2015-11-23T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/3-french-revolution.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/3-french-revolution.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/3-french-revolution.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/3-french-revolution.html"
+                }
+            }
+        }, {
+            "info": {
+                "id": "4-3d-printing",
+                "number": 4,
+                "title": "3D printing",
+                "description": "Luke and Seth marvel at the mysteries of 3D printing and wonder if there's anything we CAN'T do.",
+                "pubDate": "2015-12-18T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/4-3d-printing.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/4-3d-printing.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/4-3d-printing.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/4-3d-printing.html"
+                }
+            }
+	}, {
+            "info": {
+                "id": "5-other-galaxies",
+                "number": 5,
+                "title": "Other galaxies",
+                "description": "Luke and Seth talk about the components of our universe and make blind guesses about how far away they are.",
+                "pubDate": "2015-12-18T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/5-other-galaxies.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/5-other-galaxies.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/5-other-galaxies.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/5-other-galaxies.html"
+                }
+            }
         }
+
     ]
 }

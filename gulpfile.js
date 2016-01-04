@@ -3,7 +3,7 @@ var jade = require('gulp-jade');
 var concat = require('gulp-concat'); // join a group of files (gulp.dest) into a single file
 var sass = require('gulp-sass');
 var browserify = require('gulp-browserify');
-var pods = require('jspods');
+var pods = require('pods');
 
 var paths = { in : {
         jade: './views/*.jade',

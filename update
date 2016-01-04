@@ -1,0 +1,7 @@
+cp public/feed.rss public/feed.old.rss
+~/git/pods/cli.js feed > public/feed.rss
+
+cp public/content.json public/content.old.json
+~/git/pods/cli.js content > public/content.json
+
+chmod 644 episodes/*.m4a

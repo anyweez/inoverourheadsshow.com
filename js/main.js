@@ -37,32 +37,33 @@ window.addEventListener('load', function () {
         JSON.parse(req.responseText).forEach(function (episode) {
             content[episode.id] = episode;
         });
+
+        // Set up some event handlers on each episode item.
+        var episodeItems = document.querySelectorAll('#episode-list li');
+
+        for (var i = 0; i < episodeItems.length; i++) {
+            episodeItems[i].addEventListener('click', function () {
+                loadContent(content[this.id]);
+                highlight(this, episodeItems);
+            });
+        }
+
+        // The header should reset to the default state.
+        document.querySelector('header h1').addEventListener('click', function () {
+            // Remove selected class from anyone who might already have it.
+            for (var j = 0; j < episodeItems.length; j++) {
+                episodeItems[j].classList.remove("selected");
+            }
+
+            for (var key in content) {
+                if (content[key].latest) {
+                    loadContent(content[key]);
+                    highlight(document.getElementById(key), episodeItems);
+                }
+            }
+        });
     };
+
     req.open('GET', '/content.json');
     req.send();
-
-    // Set up some event handlers on each episode item.
-    var episodeItems = document.querySelectorAll('#episode-list li');
-
-    for (var i = 0; i < episodeItems.length; i++) {
-        episodeItems[i].addEventListener('click', function () {
-            loadContent(content[this.id]);
-            highlight(this, episodeItems);
-        });
-    }
-
-    // The header should reset to the default state.
-    document.querySelector('header h1').addEventListener('click', function () {
-        // Remove selected class from anyone who might already have it.
-        for (var j = 0; j < episodeItems.length; j++) {
-            episodeItems[j].classList.remove("selected");
-        }
-
-        for (var key in content) {
-            if (content[key].latest) {
-                loadContent(content[key]);
-                highlight(document.getElementById(key), episodeItems);
-            }
-        }
-    });
 });
