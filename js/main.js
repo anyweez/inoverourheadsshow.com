@@ -12,6 +12,9 @@ function loadContent(episode) {
     var timestamp = document.querySelector('#show-notes .recording-ts');
     timestamp.innerHTML = "Recorded on " + moment(episode.timestamp).format('ddd, MMM D, YYYY');
 
+    var player = document.getElementById('audio-player');
+    player.src = episode.audio;
+
     var notes = document.querySelector('#show-notes #notes-content');
     notes.innerHTML = episode.content;
 }

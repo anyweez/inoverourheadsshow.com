@@ -24,11 +24,13 @@ html
                             li(id=episode.info.id) 
                                 h2 Episode #{episode.info.number}
                                 h3 #{episode.info.title}
-                
+
             div(id='show-notes')
                 h2 Episode #{podcast.latest.info.number}: #{podcast.latest.info.title}
                 p(class="recording-ts") Recorded on #{podcast.latest.info.pubDate.format('ddd, MMM D, YYYY')}
-                div(id="notes-content")
+                div(id='player')
+                    audio(id='audio-player',src='#{podcast.latest.content.audio.public}',preload='auto')
+                div(id='notes-content')
                     != podcast.latest.content.text
         
         include ./footer.jade
