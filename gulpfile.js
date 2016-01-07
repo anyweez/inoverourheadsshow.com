@@ -32,15 +32,6 @@ gulp.task('templates', function (done) {
             .pipe(gulp.dest(paths.out.html));
         done();
     });
-/*
-    return gulp.src(paths.in.jade)
-        .pipe(jade({
-            locals: {
-                podcast: pods.read('episodes.json'),
-            }
-        }))
-        .pipe(gulp.dest(paths.out.html));
-*/
 });
 
 gulp.task('styles', function () {

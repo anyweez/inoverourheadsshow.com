@@ -5,7 +5,7 @@ a {
 body {
     background-color: #dedede;
     background-blend-mode: color;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -15,11 +15,13 @@ header {
         padding: .5% 0 0 1%;
         margin: 0;
         cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
     }
     h2 {
         text-transform: lowercase;
         padding: 0 0 0 1%;
         margin: 1% 0 0 0;
+        font-family: 'Montserrat', sans-serif;
     }
     padding-bottom: 1%;
 }
@@ -47,7 +49,7 @@ header {
     li {
         list-style-type: none;
         border-bottom: 1px solid black;
-        padding: 4% 3%;
+        padding: 3% 3%;
         background-color: white;
     }
     li:hover {
@@ -59,7 +61,7 @@ header {
         padding: 0;
         margin: 0 0 2% 0;
         font-weight: bold;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     h3 {
         padding: 0;

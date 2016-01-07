@@ -2,7 +2,7 @@
     "series": {
         "title": "In Over Our Heads",
         "subtitle": "two men and a world of [mis]information",
-        "description": "Childhood friends Luke Segars and Seth Rushton know each other pretty well, but the rest of life is a mystery. Join them as they try to explain concepts like fog, the stock market, and yetis.",
+        "description": "Childhood friends Luke and Seth know each other pretty well, but the rest of life is a mystery. Join them as they try to explain concepts like fog, the stock market, and yetis.",
         "links": {
             "site": "http://inoverourheadsshow.com",
             "art": "http://inoverourheadsshow.com/images/logo.png",
@@ -76,7 +76,7 @@
                 "id": "3-french-revolution",
                 "number": 3,
                 "title": "French Revolution",
-		"description": "Luke and Seth bravely explore the causes, costs, and after effects of the French Revolution along with Marie Antoinette's diet.",
+                "description": "Luke and Seth bravely explore the causes, costs, and after effects of the French Revolution along with Marie Antoinette's diet.",
                 "pubDate": "2014-11-23T20:00:00"
             },
             "content": {
