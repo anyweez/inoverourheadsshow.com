@@ -128,6 +128,25 @@
                     "public": "http://inoverourheadsshow.com/shownotes/5-other-galaxies.html"
                 }
             }
+        }, {
+            "info": {
+                "id": "6-galapagos",
+                "number": 6,
+                "title": "Darwins voyage to the Galapagos",
+                "description": "The guys consider the exciting origin of the theory of evolution.",
+                "pubDate": "2015-01-07T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/6-galapagos.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/6-galapagos.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/6-galapagos.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/6-galapagos.html"
+                }
+            }
         }
 
     ]
