@@ -147,6 +147,25 @@
                     "public": "http://inoverourheadsshow.com/shownotes/6-galapagos.html"
                 }
             }
+        }, {
+            "info": {
+                "id": "7-lightning",
+                "number": 7,
+                "title": "Lightning",
+                "description": "Luke and Seth speculate on the nature of lightning and how on earth Ben Franklin survived his little experiment.",
+                "pubDate": "2015-02-05T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/7-lightning.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/7-lightning.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/7-lightning.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/7-lightning.html"
+                }
+            }
         }
 
     ]
