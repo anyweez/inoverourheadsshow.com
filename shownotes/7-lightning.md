@@ -1,7 +1,28 @@
-**LIGHTNING** show note text. Include a bunch of links, the topic we covered, and our claims.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+## Claims
+1. People have survived being struck by lightning. What's the greatest number of times someone has been struck by lightning and lived to tell the tale?
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+    **Seth's guess:** ten times
 
-Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+    **Luke's guess:** seven times
+    
+    **Actual answer:** seven times! [Roy Sullivan](https://en.wikipedia.org/wiki/Roy_Sullivan) was a park ranger and was struck seven times in his 71 years of life. This is *extremely* unlikely for the average person, but Roy's odds were a bit higher due to the nature of his work (being outside in open areas often) and the area where he lived (Virginia).
+
+2. Does lightning start in the cloud or on earth?
+
+    **Seth's guess:** starts on earth
+
+    **Luke's guess:** starts in the sky
+    
+    **Actual answer:** [both](http://www.nssl.noaa.gov/education/svrwx101/lightning/faq/)! A positive stream of energy is "sent out" from objects on the ground, and a negative stream of energy comes from the sky. When the two streams meet, the visible burst zips upward to the sky from the ground (though it doesn't always touch the ground).
+
+3. Why did Benjamin Franklin do his famous lightning strike experiment?
+
+    **Seth's guess:** to test his new invention, the lightning rod
+
+    **Luke's guess:** science related to conductivity
+    
+    **Actual answer:** believe it or not we don't actually have much evidence that this experiment *actually* took place. Regardless, we do know the [Franklin was really interested in electricity](http://www.history.com/this-day-in-history/franklin-flies-kite-during-thunderstorm) and [invented the household version of the lightning rod](https://en.wikipedia.org/wiki/Lightning_rod#History) the year after this experiment supposedly took place.
+
+## Additional references
+Here's a [handy reference from NOAA](http://www.nws.noaa.gov/om/lightning/resources/LightningFactsSheet.pdf) about lightning safety. In addition to a bunch of useful safety tips, it also describes the counting method for determining how far a lightning strike is from you (one mile for every five seconds, by the way).
