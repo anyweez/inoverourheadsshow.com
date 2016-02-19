@@ -166,7 +166,25 @@
                     "public": "http://inoverourheadsshow.com/shownotes/7-lightning.html"
                 }
             }
+        }, {
+            "info": {
+                "id": "8-eggs",
+                "number": 8,
+                "title": "Eggs",
+                "description": "Ah, the source of (some) life! Luke and Seth review what they know about Mother Nature's life nuggets as well as the things they didn't know they didn't know.",
+                "pubDate": "2015-02-19T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/8-eggs.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/8-eggs.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/8-eggs.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/8-eggs.html"
+                }
+            }
         }
-
     ]
 }
