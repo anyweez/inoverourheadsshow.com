@@ -1,4 +1,3 @@
-
 ## Claims
 1. People have survived being struck by lightning. What's the greatest number of times someone has been struck by lightning and lived to tell the tale?
 
