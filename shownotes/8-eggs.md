@@ -1,1 +1,1 @@
-Checkout the episode above; show notes not yet available!
+Check out the episode above; show notes not yet available!
