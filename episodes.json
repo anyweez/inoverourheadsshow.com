@@ -185,6 +185,25 @@
                     "public": "http://inoverourheadsshow.com/shownotes/8-eggs.html"
                 }
             }
+        }, {
+            "info": {
+                "id": "9-aquifers",
+                "number": 9,
+                "title": "Aquifers",
+                "description": "Groundwater. You like it. I like it. Seth and Luke try their best to explain where it comes from and how it works.",
+                "pubDate": "2015-02-27T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/9-aquifers.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/9-aquifers.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/9-aquifers.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/9-aquifers.html"
+                }
+            }
         }
     ]
 }
