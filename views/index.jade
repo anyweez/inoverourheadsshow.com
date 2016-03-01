@@ -1,43 +1,38 @@
 doctype html
+
 html
     head
         meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
         meta(name='description', content='Childhood friends Luke and Seth know each other pretty well, but the rest of life is a mystery. Join them as they try to explain concepts like fog, the stock market, and yetis.')
         title In Over Our Heads Show
         link(rel='stylesheet', href='css/style.css')
-        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat', type='text/css')
-        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans', type='text/css')
-        
-        script(src='https://cdn.jsdelivr.net/audiojs/0.1/audio.min.js')
-        script(src='js/app.js')
-        script
-          | 
-          | audiojs.events.ready(function () {
-          |    var as = audiojs.createAll();
-          | });
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500', type='text/css')
         
     body
         include ./header.jade
         div(id='content')
-            div(id='episode-list')
-                ul
-                    //- Loop through all episodes in reverse order (making it newest first)
-                    each episode, index in podcast.episodes.reverse()
-                        if episode.info.id == podcast.latest.info.id
-                            li(id=episode.info.id, class="selected") 
-                                h2 Episode #{episode.info.number}
-                                h3 #{episode.info.title}
-                        else
-                            li(id=episode.info.id) 
-                                h2 Episode #{episode.info.number}
-                                h3 #{episode.info.title}
+            section(div='what-we-do')
+                h2 What we do
+                p This podcast is dedicated to appreciating the things that we don't understand. Seth and Luke randomly select topics that they're not particularly knowledgeable of and discuss them in an attempt to better understand the wold around them.
+                p You can subscribe to the In Over Our Head Show on #[a(href='https://itunes.apple.com/us/podcast/in-over-our-heads/id1072652131?mt=2') iTunes] or with #[a(href='https://inoverourheadsshow.com/feed.rss') RSS].
+                                            
+            section(div='who-we-are')
+                h2 Who we are
+                p Some info about the hosts
+                
+            section(id='episode-list')
+                h2 Episodes
+                each episode, index in podcast.episodes.reverse()
+                    li.episode(id=episode.info.id, class=(episode.info.id == podcast.latest.info.id) ? 'selected' : '') 
+                        div.episode-header
+                            if episode.info.id == podcast.latest.info.id
+                                div.latest Latest episode
+                            img.episode-image(src='#{episode.info.coverImage}')
+                        div.show-notes
+                            h2 Episode #{episode.info.number}: #{episode.info.title}
+                            p.recording-ts Published on #{episode.info.pubDate.format('ddd, MMM D, YYYY')}
+                            audio(src='#{episode.content.audio.public}',controls)
+                            div.notes-content
+                                != episode.content.text
 
-            div(id='show-notes')
-                h2 Episode #{podcast.latest.info.number}: #{podcast.latest.info.title}
-                p(class="recording-ts") Recorded on #{podcast.latest.info.pubDate.format('ddd, MMM D, YYYY')}
-                div(id='player')
-                    audio(id='audio-player',src='#{podcast.latest.content.audio.public}',preload='auto')
-                div(id='notes-content')
-                    != podcast.latest.content.text
-        
         include ./footer.jade

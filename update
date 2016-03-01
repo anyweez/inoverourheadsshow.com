@@ -1,3 +1,6 @@
+git pull
+npm install
+
 cp public/feed.rss public/feed.old.rss
 ~/git/pods/cli.js feed > public/feed.rss
 
