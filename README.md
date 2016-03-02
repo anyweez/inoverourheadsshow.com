@@ -1,17 +1,9 @@
 # inoverourheadsshow.com
-![Build status](https://travis-ci.org/anyweez/inoverourheadsshow.com.svg?branch=travis)
 
+The [In Over Our Heads Show](https://inoverourheadsshow.com/) is a podcast that speculates on the stuff around us that we don't know much about. This repository contains all of the website content except for the audio files.
+
+## Instructions
 Run `gulp` to generate all public-facing content. Content will all be added to the `public/` folder, which can be served directly.
 
-Audio content is not present in this repo but can be downloaded using a soon-to-be-available script.
-
-## TODO items
-- **[DONE]** Core content layout
-- **[DONE]** SCSS styling
-- **[DONE]** Gulpfile
-- **[DONE]** RSS generator and validator
-- **[DONE]** Finalize design
-- **[DONE]** Write content
-- **[DONE]** Frontend JS / show notes loading
-- Finalize logo
-- Write show notes
+## Podcast info
+For more information on the podcast itself, check out our website at [https://inoverourheadsshow.com](https://inoverourheadsshow.com/).
