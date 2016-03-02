@@ -1,7 +1,9 @@
 ### Claims
 
 1. Do yetis actually exist?
+
 2. What's the origin of yeti mythology?
+
 3. What's the relationship between yetis, bigfoot, and the Abominable Snowman?
 
 ### Additional references

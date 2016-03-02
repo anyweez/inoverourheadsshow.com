@@ -1,7 +1,9 @@
 ### Claims
 
 1. What caused the French People to rebel?
+
 2. What event signaled the end of the Revolution?
+
 3. What caused the Napoleonic Wars?
 
 ### Additional resources
