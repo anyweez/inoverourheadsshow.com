@@ -1,0 +1,63 @@
+$episode-height: 400px;
+
+#episode-list {
+    .episode {
+        @include row();
+        min-height: $episode-height;
+        margin: 10px 0;
+        border: 2px solid darken($header-bg-color, 20%);
+        box-shadow: 3px 4px 5px lighten($header-bg-color, 35%);
+        box-sizing: content-box;
+        overflow: hidden;
+        
+        .latest {
+            background-color: $highlight-color;
+            opacity: .9;
+            padding: .6em 0;
+            text-align: center;
+            border: 2px solid black;
+            border-top-width: 0;
+            border-left-width: 0;
+            
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        
+        h2 {
+            margin: 1em 0 .3em 0;
+        }
+        
+        .recording-ts {
+            margin: .3em 0;
+            font-style: italic;
+        }
+        
+        .episode-header {
+            @include span-columns(3);
+            position: relative;
+            height: 100%;
+            background-color: black;
+            
+            img {
+                vertical-align: top;
+                width: 100%;
+                border-right: 2px solid darken($header-bg-color, 20%);
+/*                max-width: 100%;
+                min-width: 25%;*/
+                height: $episode-height;
+                overflow: hidden;
+            }
+        }
+        .show-notes {
+            @include span-columns(9);
+        }
+        
+        .notes-content ol {
+            padding-left: 30px;
+        }
+        .notes-content li {
+            list-style-type: decimal;
+        }
+    }
+}

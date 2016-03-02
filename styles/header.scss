@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    height: $header-height;
+    background-color: $header-bg-color;
+    color: $header-font-color;
+    
+    #logo {
+        width: $logo-dim;
+        height: $logo-dim;
+        align-self: center;
+        
+        margin: ($header-height - $logo-dim) / 2;
+        
+        border: 2px solid #ccc;
+    }
+    
+    #title {
+        vertical-align: middle;
+        margin: 0;
+        align-self: center;
+        font-weight: normal;
+        
+        h1 {
+            margin: .2em 0;
+        }
+    }
+}
+
+
+
+
