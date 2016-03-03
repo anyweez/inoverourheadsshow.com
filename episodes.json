@@ -204,6 +204,25 @@
                     "public": "http://inoverourheadsshow.com/shownotes/9-aquifers.html"
                 }
             }
+        }, {
+            "info": {
+                "id": "10-antimatter",
+                "number": 10,
+                "title": "Antimatter",
+                "description": "Today Sam joins us as our first guest on the show as we discuss everyone's favorite dinner table topic: antimatter!",
+                "pubDate": "2015-03-02T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/10-antimatter.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/10-antimatter"
+                },
+                "notes": {
+                    "source": "shownotes/10-antimatter.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/10-antimatter.html"
+                }
+            }
         }
     ]
 }
