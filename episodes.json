@@ -216,7 +216,7 @@
                 "audio": {
                     "source": "https://download.soundcloud.com/whatever",
                     "local": "public/episodes/10-antimatter.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/10-antimatter"
+                    "public": "http://inoverourheadsshow.com/episodes/10-antimatter.m4a"
                 },
                 "notes": {
                     "source": "shownotes/10-antimatter.md",
