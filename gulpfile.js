@@ -1,3 +1,4 @@
+/* jslint node: true */
 var gulp = require('gulp');
 var jade = require('gulp-jade');
 var concat = require('gulp-concat'); // join a group of files (gulp.dest) into a single file
@@ -5,25 +6,33 @@ var sass = require('gulp-sass');
 var browserify = require('gulp-browserify');
 var pods = require('pods');
 
-var paths = { in : {
+var paths = { 
+    in : {
         jade: './views/*.jade',
+        scss_entry: './styles/main.scss',
         scss: './styles/*.scss',
         js: './js/*.js',
-	images: './images/*',
+        images: './images/*',
+        favicon: './images/favicon.ico',
     },
     out: {
         html: './public',
         css: './public/css',
         js: './public/js',
-	images: './public/images',
+        images: './public/images',
     }
 };
 
-gulp.task('default', ['templates', 'styles', 'js', 'images', 'test']);
+gulp.task('default', ['templates', 'favicon', 'styles', 'js', 'images']);
+
+// gulp.task('episodes', function () {
+//     return gulp.src('./episodes/*')
+//         .pipe(gulp.dest('./public/episodes'));
+// });
 
 gulp.task('templates', function (done) {
-    pods.read('episodes.json', function(podcast) {
-        return gulp.src(paths.in.jade)
+    return pods.read('episodes.json', function(podcast) {
+        gulp.src(paths.in.jade)
             .pipe(jade({
                 locals: {
                     podcast: podcast,
@@ -35,9 +44,11 @@ gulp.task('templates', function (done) {
 });
 
 gulp.task('styles', function () {
-    return gulp.src(paths.in.scss)
+    return gulp.src(paths.in.scss_entry)
         .pipe(sass({
-            includePaths: require('node-normalize-scss').includePaths
+            includePaths: [
+                require('node-normalize-scss').includePaths, 
+            ].concat(require('node-neat').includePaths),
         }).on('error', sass.logError))
         .pipe(concat('style.css'))
         .pipe(gulp.dest(paths.out.css));
@@ -55,8 +66,9 @@ gulp.task('images', function() {
         .pipe(gulp.dest(paths.out.images));
 });
 
-gulp.task('test', function () {
-
+gulp.task('favicon', function() {
+    return gulp.src(paths.in.favicon)
+        .pipe(gulp.dest('./public'));
 });
 
 gulp.task('watch', ['templates', 'styles', 'js'], function () {

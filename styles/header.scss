@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    height: $header-height;
+    background-color: $header-bg-color;
+    color: $header-font-color;
+    
+    #logo {
+        width: $logo-dim;
+        height: $logo-dim;
+        align-self: center;
+        
+        margin: ($header-height - $logo-dim) / 2;
+        
+        border: 2px solid #ccc;
+    }
+    
+    #title {
+        vertical-align: middle;
+        margin: 0;
+        align-self: center;
+        font-weight: normal;
+        
+        h1 {
+            margin: .3em 0 .3em 0;
+            font-size: 2.2em;
+        }
+        
+        p {
+            font-weight: 300;
+            margin-top: 0;
+        }
+    }
+    
+    @include media($media-small, 6) {
+        height: $header-height * .75;
+        
+        #title h1 {
+            font-size: 1.4em;
+        }
+        
+        #title p {
+            font-size: .75em;
+        }
+        
+        #logo {
+            width: $logo-dim * .75;
+            height: $logo-dim * .75;
+        }
+    }
+}
+
+
+
+

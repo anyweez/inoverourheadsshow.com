@@ -1,102 +1,65 @@
-a {
-    text-decoration: none;
-}
-
 body {
-    background-color: #dedede;
-    background-blend-mode: color;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #fcfcfc;
 }
 
-header {
-    h1 {
-        text-transform: lowercase;
-        font-size: 4em;
-        padding: .5% 0 0 1%;
-        margin: 0;
-        cursor: pointer;
-        font-family: 'Montserrat', sans-serif;
-    }
-    h2 {
-        text-transform: lowercase;
-        padding: 0 0 0 1%;
-        margin: 1% 0 0 0;
-        font-family: 'Montserrat', sans-serif;
-    }
-    padding-bottom: 1%;
+h1 {
+    font-weight: 500;
 }
 
-#summary {
-    padding: 1%;
-    margin: 1% 0;
-    border: 2px solid black;
-    border-width: 2px 0 2px 0;
-    p {
-        margin: 0;
-    }
-    background-color: #1760A9;
-    color: white;
-    text-shadow: 1px 1px 3px black;
+h2, h3 {
+    font-weight: 400;
 }
 
-#episode-list {
-    border: solid black;
-    border-width: 1px 1px 0 1px;
-    ul {
-        padding: 0;
-        margin: 0;
-    }
-    li {
-        list-style-type: none;
-        border-bottom: 1px solid black;
-        padding: 3% 3%;
-        background-color: white;
-    }
-    li:hover {
-        cursor: pointer;
-        border-right: 5px solid #1760A9;
-        background-color: #ACC3DB;
-    }
-    h2 {
-        padding: 0;
-        margin: 0 0 2% 0;
-        font-weight: bold;
-        font-size: 1.2em;
-    }
-    h3 {
-        padding: 0;
-        margin: 0;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 1em;
-    }
-    .selected {
-        border-right: 5px solid #1760A9;
-        background-color: #ACC3DB;
+a {
+    // color: $highlight-color;
+    color: inherit;
+    
+    &:hover {
+        text-decoration: none;
     }
 }
 
-#show-notes {
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-    h2 {
-        padding: 0;
-        margin: 0 0 .5% 0;
-    }
-    .recording-ts {
-        font-style: italic;
-        margin-top: 0;
-    }
+audio {
+    margin: 1% 0 0 0;
 }
 
 #content {
-    padding-left: 1%;
+    @include outer-container(90%);
+    
+    padding: 30px 0;
+    
+    $grid-columns: 12;
+    $visual-grid: true;
+    
+    #what-we-do {
+        overflow: auto;
+    }
+    
+    animation: fadein 1.2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to {  opactity: 1; }
+}
+
+li {
+    list-style-type: none;
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 1.4em;
 }
 
 footer {
+    background-color: $header-bg-color;
+    color: $header-font-color;
+    padding: 1em;
     text-align: right;
-    padding-right: 1%;
+    
+    p {
+        margin: 0;
+    }
 }

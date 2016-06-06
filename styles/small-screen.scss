@@ -1,0 +1,38 @@
+@media (max-width: 900px) {
+    header {
+        h1 {
+            font-size: 1.4em;
+        }
+        p {
+            font-size: .9em;
+        }
+    }
+    #episode-list {
+        .episode {
+            min-height: inherit;
+            h2 {
+                margin-top: .6em;
+            }
+            .episode-header {
+                display: block;
+                width: 100%;
+                height: inherit;
+                img {
+                    display: none;
+                }
+                .latest {
+                    @include span-columns(12);
+                    position: inherit;
+                    padding: .3em;
+                    top: 0;
+            box-sizing: border-box;
+                }
+            }
+            .show-notes {
+                width: 100%;
+                padding: .6em;
+                box-sizing: border-box;
+            }
+        }
+    }
+}

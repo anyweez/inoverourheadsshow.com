@@ -1,0 +1,124 @@
+$primary-episode-font-size: 1.6em;
+
+#episode-list {
+    .episode-main {
+        @include row();
+        margin: 12px 0;
+        
+        .latest {
+            display: inline-block;
+            font-size: .5em;
+            text-transform: uppercase;
+            margin: 5px 0 0 18px;
+            
+            background-color: #FAF55A;
+            border: 1px dotted #B5B01D;
+            padding: 2px;
+            vertical-align: top;
+        }
+        
+        .play-button {
+            @include span-columns(.5);
+            font-size: $primary-episode-font-size * 1.25;
+            line-height: $primary-episode-font-size * 1.25;
+            
+            color: #999;
+            
+            &:hover {
+                color: inherit;
+            }
+        }
+        
+        .episode-id {
+            @include span-columns(1);
+            font-size: $primary-episode-font-size * 1.25;
+            line-height: $primary-episode-font-size * 1.25;
+        }
+        
+        .episode-core-content {
+            @include span-columns(10.5);
+        }
+        
+        .episode-title {
+            font-size: $primary-episode-font-size;
+            margin-bottom: 8px;
+        }
+        
+        .episode-subtitle {
+            color: #999;
+                
+            .episode-publication-date {
+                @include span-columns(1.5);
+            } 
+            
+            .episode-button {
+                @include span-columns(1.5);
+                font-size: $primary-episode-font-size * 0.5;
+                display: inline-block;
+                
+                span {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    
+    .show-notes {
+        display: none;
+        background-color: #ccc;
+        padding: 1%;
+        
+        li {
+            list-style-type: decimal;
+        }
+        
+        &.show {
+            display: block;
+            animation: fadein .5s;
+        }
+    }
+    
+    @include media($media-medium) {
+        .episode-main {
+            .episode-subtitle .episode-publication-date {
+                @include span-columns(1.5);
+            }
+            .episode-subtitle .episode-button {
+                @include span-columns(1.5);
+            }
+        }
+    }
+    
+    @include media($media-small) {
+        .episode-main {
+            font-size: .75em;
+            
+            .latest {
+                
+                margin: 3px 0 0 12px;
+            }
+            
+            .play-button {
+                @include span-columns(.5);
+            }
+            
+            .episode-id {
+                @include span-columns(1);
+            }
+            
+            .episode-core-content {
+                @include span-columns(2.5);
+                
+                .episode-title {
+                    // line-height: $primary-episode-font-size * 1.5;
+                    margin: 0;                    
+                    margin-top: 12px;
+                }
+                
+                .episode-subtitle {
+                    display: none;
+                }
+            }
+        }
+    }
+}
