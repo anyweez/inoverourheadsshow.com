@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    background-color: #fcfcfc;
 }
 
 h1 {
@@ -12,7 +13,12 @@ h2, h3 {
 }
 
 a {
-    color: $highlight-color;
+    // color: $highlight-color;
+    color: inherit;
+    
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 audio {
@@ -20,9 +26,23 @@ audio {
 }
 
 #content {
-    @include outer-container(80%);
+    @include outer-container(90%);
+    
+    padding: 30px 0;
+    
     $grid-columns: 12;
     $visual-grid: true;
+    
+    #what-we-do {
+        overflow: auto;
+    }
+    
+    animation: fadein 1.2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to {  opactity: 1; }
 }
 
 li {

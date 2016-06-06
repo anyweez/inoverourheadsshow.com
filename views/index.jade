@@ -5,35 +5,46 @@ html
         meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
         meta(name='description', content='Childhood friends Luke and Seth know each other pretty well, but the rest of life is a mystery. Join them as they try to explain concepts like fog, the stock market, and yetis.')
         title In Over Our Heads Show
-        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
         link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500', type='text/css')
+        link(rel='stylesheet', href='css/style.css')
+        
+        
         
     body
         include ./header.jade
         div(id='content')
-            section(div='what-we-do')
-                h2 What we do
+            section(id='what-we-do')
                 p This podcast is dedicated to appreciating the things that we don't understand. Seth and Luke randomly select topics that they're not particularly knowledgeable of and discuss them in an attempt to better understand the wold around them.
-                p You can subscribe to the In Over Our Head Show on #[a(href='https://itunes.apple.com/us/podcast/in-over-our-heads/id1072652131?mt=2') iTunes] or with #[a(href='https://inoverourheadsshow.com/feed.rss') RSS].
-                                            
-            section(div='who-we-are')
-                h2 Who we are
-                p Seth Rushton and Luke Segars first became friends in 1996, the same year the world was introduced to Ask Jeeves. They stuck together throughout the twists and turns of the two decades that followed (Y2K! The invention of YouTube and Facebook! Three different reboots of the Hulk franchise!) to get to the present day where they still spend too much time with one another. 
-                p Over the years, these two developed quite different academic interests; Luke went to graduate school in computer science (what a dreamer!) while Seth did the same thing but for American literature and religion (always the pragmatist!). However, even though they have wildly different specialities, both men share an enthusiasm for curiosity and are genuinely interested  in how every aspect of the modern world works.
-                
+                p You can subscribe to the show on #[a(href='https://itunes.apple.com/us/podcast/in-over-our-heads/id1072652131?mt=2') iTunes] or with #[a(href='https://inoverourheadsshow.com/feed.rss') RSS].
+              
             section(id='episode-list')
                 h2 Episodes
                 each episode, index in podcast.episodes.reverse()
                     li.episode(id=episode.info.id, class=(episode.info.id == podcast.latest.info.id) ? 'selected' : '') 
-                        div.episode-header
-                            if episode.info.id == podcast.latest.info.id
-                                div.latest Latest episode
-                            img.episode-image(src='#{episode.info.coverImage}')
-                        div.show-notes
-                            h2 Episode #{episode.info.number}: #{episode.info.title}
-                            p.recording-ts Published on #{episode.info.pubDate.format('ddd, MMM D, YYYY')}
-                            audio(src='#{episode.content.audio.public}',controls)
-                            div.notes-content
-                                != episode.content.text
-
+                        div.episode-main
+                            div.play-button
+                                i(class='fa fa-play-circle',aria-hidden='true') 
+                            div.episode-id #{('000' + episode.info.number).substr(-3, 3)}
+                            div.episode-core-content
+                                div.episode-title #{episode.info.title}
+                                div.episode-publication-date #{episode.info.pubDate.format('MMM D, YYYY')}
+                                    div.episode-button 
+                                        a(href='#')
+                                            i(class='fa fa-file-text-o',aria-hidden="true") 
+                                            span show notes
+                                    div.episode-button 
+                                        a(href='#{episode.content.audio.public}')
+                                            i(class='fa fa-download',aria-hidden="true") 
+                                            span download
+                        div.show-notes !{episode.content.text}
+                        
+                        
+                        
+                                
+            section(div='who-we-are')
+                h2 Who we are
+                p Seth Rushton and Luke Segars first became friends in 1996, the same year the world was introduced to Ask Jeeves. They stuck together throughout the twists and turns of the two decades that followed (Y2K! The invention of YouTube and Facebook! Three different reboots of the Hulk franchise!) to get to the present day where they still spend too much time with one another. 
+                p Over the years, these two developed quite different academic interests; Luke went to graduate school in computer science (what a dreamer!) while Seth did the same thing but for American literature and religion (always the pragmatist!). However, even though they have wildly different specialities, they both share an enthusiasm for curiosity and are genuinely interested  in how every aspect of the modern world works.
+              
         include ./footer.jade

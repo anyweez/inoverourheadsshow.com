@@ -1,55 +1,58 @@
-$episode-height: 400px;
+$primary-episode-font-size: 1.6em;
+
 #episode-list {
-    .episode {
+    .episode-main {
         @include row();
-        min-height: $episode-height;
-        margin: 10px 0;
-        padding: 15px 0;
-        border: 2px solid darken($header-bg-color, 20%);
-        border-width: 0 0 2px 0;
-        box-shadow: 0 4px 2px -2px lighten($header-bg-color, 35%);
-        box-sizing: content-box;
-        overflow: hidden;
-        .latest {
-            background-color: $highlight-color;
-            box-shadow: 0 4px 4px -2px $header-bg-color;
-            opacity: .95;
-            padding: .4em 0;
-            text-align: center;
-            border: 1px solid black;
-            position: absolute;
-            top: 10px;
-            width: 100%;
-        }
-        h2 {
-            margin: 1em 0 .3em 0;
-        }
-        .recording-ts {
-            margin: .3em 0;
-            font-style: italic;
-        }
-        .episode-header {
-            @include span-columns(3);
-            position: relative;
-            height: 100%;
-            background-color: black;
-            img {
-                vertical-align: top;
-                width: 100%;
-                border: 2px solid darken($header-bg-color, 20%);
-                min-width: 25%;
-                height: $episode-height;
-                overflow: hidden;
+        margin: 12px 0;
+        
+        .play-button {
+            @include span-columns(.5);
+            font-size: $primary-episode-font-size * 1.2;
+            line-height: $primary-episode-font-size * 1.2;
+            
+            color: #999;
+            
+            &:hover {
+                color: inherit;
             }
         }
-        .show-notes {
-            @include span-columns(9);
+        
+        .episode-id {
+            @include span-columns(1);
+            font-size: $primary-episode-font-size * 1.2;
+            line-height: $primary-episode-font-size * 1.2;
         }
-        .notes-content ol {
-            padding-left: 30px;
+        
+        .episode-core-content {
+            @include span-columns(6);
         }
-        .notes-content li {
-            list-style-type: decimal;
+        
+        .episode-title {
+            font-size: $primary-episode-font-size;
+            margin-bottom: 2px;
         }
+        
+        .episode-publication-date {
+            color: #999;
+        }
+        
+        .episode-button {
+            font-size: $primary-episode-font-size * 0.5;
+            display: inline-block;
+            
+            margin-left: 5%;
+            &:first-child {
+                margin-left: 10%;
+            }
+            
+            
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+    
+    .show-notes {
+        display: none;
     }
 }
