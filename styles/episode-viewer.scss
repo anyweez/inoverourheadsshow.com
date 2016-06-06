@@ -32,22 +32,21 @@ $primary-episode-font-size: 1.6em;
             margin-bottom: 2px;
         }
         
-        .episode-publication-date {
+        .episode-subtitle {
             color: #999;
-        }
-        
-        .episode-button {
-            font-size: $primary-episode-font-size * 0.5;
-            display: inline-block;
+                
+            .episode-publication-date {
+                @include span-columns(3);
+            } 
             
-            margin-left: 5%;
-            &:first-child {
-                margin-left: 10%;
-            }
-            
-            
-            span {
-                margin-left: 5px;
+            .episode-button {
+                @include span-columns(2);
+                font-size: $primary-episode-font-size * 0.5;
+                display: inline-block;
+                
+                span {
+                    margin-left: 5px;
+                }
             }
         }
     }

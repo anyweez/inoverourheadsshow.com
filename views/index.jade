@@ -15,7 +15,7 @@ html
         include ./header.jade
         div(id='content')
             section(id='what-we-do')
-                p This podcast is dedicated to appreciating the things that we don't understand. Seth and Luke randomly select topics that they're not particularly knowledgeable of and discuss them in an attempt to better understand the wold around them.
+                p This podcast is dedicated to appreciating the things that we don't understand. Seth and Luke randomly select topics that they're not particularly knowledgeable of and discuss them in an attempt to better understand the world around them.
                 p You can subscribe to the show on #[a(href='https://itunes.apple.com/us/podcast/in-over-our-heads/id1072652131?mt=2') iTunes] or with #[a(href='https://inoverourheadsshow.com/feed.rss') RSS].
               
             section(id='episode-list')
@@ -28,7 +28,8 @@ html
                             div.episode-id #{('000' + episode.info.number).substr(-3, 3)}
                             div.episode-core-content
                                 div.episode-title #{episode.info.title}
-                                div.episode-publication-date #{episode.info.pubDate.format('MMM D, YYYY')}
+                                div.episode-subtitle
+                                    div.episode-publication-date #{episode.info.pubDate.format('MMM D, YYYY')}
                                     div.episode-button 
                                         a(href='#')
                                             i(class='fa fa-file-text-o',aria-hidden="true") 
