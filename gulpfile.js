@@ -25,10 +25,10 @@ var paths = {
 
 gulp.task('default', ['templates', 'favicon', 'styles', 'js', 'images']);
 
-// gulp.task('episodes', function () {
-//     return gulp.src('./episodes/*')
-//         .pipe(gulp.dest('./public/episodes'));
-// });
+gulp.task('episodes', function () {
+    return gulp.src('./episodes/*')
+        .pipe(gulp.dest('./public/episodes'));
+});
 
 gulp.task('templates', function (done) {
     return pods.read('episodes.json', function(podcast) {
