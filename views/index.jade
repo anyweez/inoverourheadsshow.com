@@ -9,7 +9,7 @@ html
         link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500', type='text/css')
         link(rel='stylesheet', href='css/style.css')
         
-        
+        script(src='js/app.js')
         
     body
         include ./header.jade
@@ -23,8 +23,7 @@ html
                 each episode, index in podcast.episodes.reverse()
                     li.episode(id=episode.info.id, class=(episode.info.id == podcast.latest.info.id) ? 'selected' : '') 
                         div.episode-main
-                            div.play-button
-                                i(class='fa fa-play-circle',aria-hidden='true') 
+                            div.play-button(data-src='#{episode.content.audio.public}',class='fa fa-play-circle',aria-hidden='true')
                             div.episode-id #{('000' + episode.info.number).substr(-3, 3)}
                             div.episode-core-content
                                 div.episode-title #{episode.info.title}

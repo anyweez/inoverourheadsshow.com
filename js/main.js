@@ -1,72 +1,47 @@
 /* jslint browser: true */
-var moment = require('moment');
 
-/**
- * Update the main content pane with data from the specified episode.
- */
-function loadContent(episode) {
-    'use strict'
-    var heading = document.querySelector('#show-notes h2');
-    heading.innerHTML = "Episode " + episode.number + ": " + episode.title;
-
-    var timestamp = document.querySelector('#show-notes .recording-ts');
-    timestamp.innerHTML = "Recorded on " + moment(episode.timestamp).format('ddd, MMM D, YYYY');
-
-    var player = document.getElementById('audio-player');
-    player.src = episode.audio;
-
-    var notes = document.querySelector('#show-notes #notes-content');
-    notes.innerHTML = episode.content;
+function EpisodeAudio(el, url) {
+    this.el = el;
+    this.url = url;
+    this.audio = null;
 }
 
-function highlight(one, all) {
-    for (var i = 0; i < all.length; i++) {
-        all[i].classList.remove('selected');
+EpisodeAudio.prototype.play = function () {
+    this.audio = new Audio(this.url);
+    this.audio.play();
+
+    this.el.classList.remove('fa-play-circle');
+    this.el.classList.add('fa-pause-circle');
+}
+
+EpisodeAudio.prototype.stop = function () {
+    if (this.audio) {
+        this.audio.pause();
+
+        this.el.classList.remove('fa-pause-circle');
+        this.el.classList.add('fa-play-circle');
+        
+        this.audio = null;
     }
-
-    one.classList.add('selected');
 }
 
-/**
- * On page load, fetch all content via AJAX and load the most recent page as soon
- * as it comes back. Set up some other event handlers as well.
- */
+EpisodeAudio.prototype.toggle = function () {
+    if (this.audio) this.stop();
+    else this.play();
+}
+
 window.addEventListener('load', function () {
-    var content = {};
+    let trackEls = document.getElementsByClassName('play-button');
+    let tracks = [];
 
-    var req = new XMLHttpRequest();
-    // Update the content object once the response comes back.
-    req.onload = function (response) {
-        JSON.parse(req.responseText).forEach(function (episode) {
-            content[episode.id] = episode;
+    for (let i = 0; i < trackEls.length; i++) {
+        let track = new EpisodeAudio(trackEls[i], trackEls[i].dataset.src);
+        
+        trackEls[i].addEventListener('click', function () {
+            tracks.forEach(track => track.stop);    // stop all other tracks
+            track.toggle();                         // start this one
         });
-
-        // Set up some event handlers on each episode item.
-        var episodeItems = document.querySelectorAll('#episode-list li');
-
-        for (var i = 0; i < episodeItems.length; i++) {
-            episodeItems[i].addEventListener('click', function () {
-                loadContent(content[this.id]);
-                highlight(this, episodeItems);
-            });
-        }
-
-        // The header should reset to the default state.
-        document.querySelector('header h1').addEventListener('click', function () {
-            // Remove selected class from anyone who might already have it.
-            for (var j = 0; j < episodeItems.length; j++) {
-                episodeItems[j].classList.remove("selected");
-            }
-
-            for (var key in content) {
-                if (content[key].latest) {
-                    loadContent(content[key]);
-                    highlight(document.getElementById(key), episodeItems);
-                }
-            }
-        });
-    };
-
-    req.open('GET', '/content.json');
-    req.send();
+        
+        tracks.push(track);
+    }
 });
