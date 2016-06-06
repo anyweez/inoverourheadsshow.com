@@ -7,8 +7,8 @@ $primary-episode-font-size: 1.6em;
         
         .play-button {
             @include span-columns(.5);
-            font-size: $primary-episode-font-size * 1.2;
-            line-height: $primary-episode-font-size * 1.2;
+            font-size: $primary-episode-font-size * 1.25;
+            line-height: $primary-episode-font-size * 1.25;
             
             color: #999;
             
@@ -19,28 +19,28 @@ $primary-episode-font-size: 1.6em;
         
         .episode-id {
             @include span-columns(1);
-            font-size: $primary-episode-font-size * 1.2;
-            line-height: $primary-episode-font-size * 1.2;
+            font-size: $primary-episode-font-size * 1.25;
+            line-height: $primary-episode-font-size * 1.25;
         }
         
         .episode-core-content {
-            @include span-columns(6);
+            @include span-columns(10.5);
         }
         
         .episode-title {
             font-size: $primary-episode-font-size;
-            margin-bottom: 2px;
+            margin-bottom: 8px;
         }
         
         .episode-subtitle {
             color: #999;
                 
             .episode-publication-date {
-                @include span-columns(3);
+                @include span-columns(1.5);
             } 
             
             .episode-button {
-                @include span-columns(2);
+                @include span-columns(1.5);
                 font-size: $primary-episode-font-size * 0.5;
                 display: inline-block;
                 
@@ -53,5 +53,43 @@ $primary-episode-font-size: 1.6em;
     
     .show-notes {
         display: none;
+    }
+    
+    @include media($media-medium) {
+        .episode-main {
+            .episode-subtitle .episode-publication-date {
+                @include span-columns(1.5);
+            }
+            .episode-subtitle .episode-button {
+                @include span-columns(1.5);
+            }
+        }
+    }
+    
+    @include media($media-small) {
+        .episode-main {
+            font-size: .75em;
+            
+            .play-button {
+                @include span-columns(.5);
+            }
+            
+            .episode-id {
+                @include span-columns(1);
+            }
+            
+            .episode-core-content {
+                @include span-columns(2.5);
+                
+                .episode-title {
+                    line-height: $primary-episode-font-size * 1.5;
+                    margin: 0;
+                }
+                
+                .episode-subtitle {
+                    display: none;
+                }
+            }
+        }
     }
 }

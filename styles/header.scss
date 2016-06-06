@@ -21,12 +21,30 @@ header {
         font-weight: normal;
         
         h1 {
-            margin: .4em 0 .3em 0;
+            margin: .3em 0 .3em 0;
+            font-size: 2.2em;
         }
         
         p {
             font-weight: 300;
             margin-top: 0;
+        }
+    }
+    
+    @include media($media-small, 6) {
+        height: $header-height * .75;
+        
+        #title h1 {
+            font-size: 1.4em;
+        }
+        
+        #title p {
+            font-size: .75em;
+        }
+        
+        #logo {
+            width: $logo-dim * .75;
+            height: $logo-dim * .75;
         }
     }
 }

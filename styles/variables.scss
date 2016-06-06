@@ -5,3 +5,6 @@ $header-bg-color: #333;
 $header-font-color: #ccc;
 
 $highlight-color: #fcd04a;
+
+$media-medium: new-breakpoint(min-width 520px max-width 1100px 8);
+$media-small: new-breakpoint(max-width 800px 4);
