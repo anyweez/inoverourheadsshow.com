@@ -29,11 +29,11 @@ html
                                 div.episode-title #{episode.info.title}
                                 div.episode-subtitle
                                     div.episode-publication-date #{episode.info.pubDate.format('MMM D, YYYY')}
-                                    div.episode-button 
+                                    div.episode-button.shownotes
                                         a(href='#')
                                             i(class='fa fa-file-text-o',aria-hidden="true") 
                                             span show notes
-                                    div.episode-button 
+                                    div.episode-button.download
                                         a(href='#{episode.content.audio.public}')
                                             i(class='fa fa-download',aria-hidden="true") 
                                             span download

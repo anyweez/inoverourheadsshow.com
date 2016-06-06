@@ -53,6 +53,17 @@ $primary-episode-font-size: 1.6em;
     
     .show-notes {
         display: none;
+        background-color: #ccc;
+        padding: 1%;
+        
+        li {
+            list-style-type: decimal;
+        }
+        
+        &.show {
+            display: block;
+            animation: fadein .5s;
+        }
     }
     
     @include media($media-medium) {

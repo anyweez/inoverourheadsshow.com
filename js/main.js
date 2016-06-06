@@ -34,6 +34,7 @@ window.addEventListener('load', function () {
     let trackEls = document.getElementsByClassName('play-button');
     let tracks = [];
 
+    // Set up all audio tracks.
     for (let i = 0; i < trackEls.length; i++) {
         let track = new EpisodeAudio(trackEls[i], trackEls[i].dataset.src);
         
@@ -43,5 +44,17 @@ window.addEventListener('load', function () {
         });
         
         tracks.push(track);
+    }
+    
+    // Add click handlers to all of the show notes buttons
+    let episodes = document.getElementsByClassName('episode');
+    for (let i = 0; i < episodes.length; i++) {
+        let shownotesBtn = episodes[i].getElementsByClassName('shownotes')[0];
+        let shownotesEl = episodes[i].getElementsByClassName('show-notes')[0];
+        
+        shownotesBtn.addEventListener('click', function () {
+            if (shownotesEl.classList.contains('show')) shownotesEl.classList.remove('show');
+            else shownotesEl.classList.add('show');
+        })
     }
 });
