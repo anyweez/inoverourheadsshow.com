@@ -5,6 +5,18 @@ $primary-episode-font-size: 1.6em;
         @include row();
         margin: 12px 0;
         
+        .latest {
+            display: inline-block;
+            font-size: .5em;
+            text-transform: uppercase;
+            margin: 5px 0 0 18px;
+            
+            background-color: #FAF55A;
+            border: 1px dotted #B5B01D;
+            padding: 2px;
+            vertical-align: top;
+        }
+        
         .play-button {
             @include span-columns(.5);
             font-size: $primary-episode-font-size * 1.25;
@@ -81,6 +93,11 @@ $primary-episode-font-size: 1.6em;
         .episode-main {
             font-size: .75em;
             
+            .latest {
+                
+                margin: 3px 0 0 12px;
+            }
+            
             .play-button {
                 @include span-columns(.5);
             }
@@ -93,8 +110,9 @@ $primary-episode-font-size: 1.6em;
                 @include span-columns(2.5);
                 
                 .episode-title {
-                    line-height: $primary-episode-font-size * 1.5;
-                    margin: 0;
+                    // line-height: $primary-episode-font-size * 1.5;
+                    margin: 0;                    
+                    margin-top: 12px;
                 }
                 
                 .episode-subtitle {

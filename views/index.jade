@@ -27,6 +27,8 @@ html
                             div.episode-id #{('000' + episode.info.number).substr(-3, 3)}
                             div.episode-core-content
                                 div.episode-title #{episode.info.title}
+                                    if (episode.info.id == podcast.latest.info.id)
+                                        div.latest Latest
                                 div.episode-subtitle
                                     div.episode-publication-date #{episode.info.pubDate.format('MMM D, YYYY')}
                                     div.episode-button.shownotes
