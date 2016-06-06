@@ -4,9 +4,9 @@
         "subtitle": "two men and a world of [mis]information",
         "description": "Childhood friends Luke and Seth know each other pretty well, but the rest of life is a mystery. Join them as they try to explain concepts like fog, the stock market, and yetis.",
         "links": {
-            "site": "https://inoverourheadsshow.com",
-            "art": "https://inoverourheadsshow.com/images/logo.png",
-            "feed": "https://inoverourheadsshow.com/feed.rss"
+            "site": "http://inoverourheadsshow.com",
+            "art": "http://inoverourheadsshow.com/images/logo.png",
+            "feed": "http://inoverourheadsshow.com/feed.rss"
         },
         "language": "en",
         "categories": [
@@ -39,19 +39,17 @@
                 "number": 1,
                 "title": "Power steering",
                 "description": "Seth and Luke admire power steering, speculate about the Model T, and take some broad swings at how cars work.",
-                "pubDate": "2014-11-17T16:00:00",
-                "coverImage": "/images/1-power-steering.jpg",
-                "photoCredit": "https://www.flickr.com/photos/celljunkee/"
+                "pubDate": "2014-11-17T16:00:00"
             },
             "content": {
                 "audio": {
-                    "source": "https://download.soundcloud.com/whatever",
+                    "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/1-power-steering.m4a",
-                    "public": "https://inoverourheadsshow.com/episodes/1-power-steering.m4a"
+                    "public": "http://inoverourheadsshow.com/episodes/1-power-steering.m4a"
                 },
                 "notes": {
                     "source": "shownotes/1-power-steering.md",
-                    "public": "https://inoverourheadsshow.com/shownotes/1-power-steering.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/1-power-steering.html"
                 }
             }
         }, {
@@ -60,19 +58,17 @@
                 "number": 2,
                 "title": "Yetis",
                 "description": "The intrepid hosts discuss evidence for yetis, the history of the legends, and realize how little they know about Scottish people.",
-                "pubDate": "2014-11-19T16:00:00",
-                "coverImage": "/images/2-yetis.jpg",
-                "photoCredit": "https://www.flickr.com/photos/anorwood/"
+                "pubDate": "2014-11-19T16:00:00"
             },
             "content": {
                 "audio": {
-                    "source": "https://download.soundcloud.com/whatever",
+                    "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/2-yetis.m4a",
-                    "public": "https://inoverourheadsshow.com/episodes/2-yetis.m4a"
+                    "public": "http://inoverourheadsshow.com/episodes/2-yetis.m4a"
                 },
                 "notes": {
                     "source": "shownotes/2-yetis.md",
-                    "public": "https://inoverourheadsshow.com/shownotes/2-yetis.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/2-yetis.html"
                 }
             }
         }, {
@@ -81,19 +77,17 @@
                 "number": 3,
                 "title": "French Revolution",
                 "description": "Luke and Seth bravely explore the causes, costs, and after effects of the French Revolution along with Marie Antoinette's diet.",
-                "pubDate": "2014-11-23T20:00:00",
-                "coverImage": "/images/3-french-revolution.jpg",
-                "photoCredit": "https://www.google.com/culturalinstitute/u/0/asset-viewer/marie-antoinette-with-the-rose/qwHgKqLoAQb9FQ"
+                "pubDate": "2014-11-23T20:00:00"
             },
             "content": {
                 "audio": {
-                    "source": "https://download.soundcloud.com/whatever",
+                    "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/3-french-revolution.m4a",
-                    "public": "https://inoverourheadsshow.com/episodes/3-french-revolution.m4a"
+                    "public": "http://inoverourheadsshow.com/episodes/3-french-revolution.m4a"
                 },
                 "notes": {
                     "source": "shownotes/3-french-revolution.md",
-                    "public": "https://inoverourheadsshow.com/shownotes/3-french-revolution.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/3-french-revolution.html"
                 }
             }
         }, {
@@ -102,19 +96,17 @@
                 "number": 4,
                 "title": "3D printing",
                 "description": "Luke and Seth marvel at the mysteries of 3D printing and wonder if there's anything we CAN'T do.",
-                "pubDate": "2014-12-15T20:00:00",
-                "coverImage": "/images/4-3d-printing.jpg",
-                "photoCredit": "https://www.flickr.com/photos/creative_tools/"
+                "pubDate": "2014-12-15T20:00:00"
             },
             "content": {
                 "audio": {
-                    "source": "https://download.soundcloud.com/whatever",
+                    "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/4-3d-printing.m4a",
-                    "public": "https://inoverourheadsshow.com/episodes/4-3d-printing.m4a"
+                    "public": "http://inoverourheadsshow.com/episodes/4-3d-printing.m4a"
                 },
                 "notes": {
                     "source": "shownotes/4-3d-printing.md",
-                    "public": "https://inoverourheadsshow.com/shownotes/4-3d-printing.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/4-3d-printing.html"
                 }
             }
 	}, {
@@ -123,19 +115,17 @@
                 "number": 5,
                 "title": "Other galaxies",
                 "description": "Luke and Seth talk about the components of our universe and make blind guesses about how far away they are.",
-                "pubDate": "2014-12-18T20:00:00",
-                "coverImage": "/images/5-other-galaxies.jpg",
-                "photoCredit": "https://www.flickr.com/photos/gsfc/"
+                "pubDate": "2014-12-18T20:00:00"
             },
             "content": {
                 "audio": {
-                    "source": "https://download.soundcloud.com/whatever",
+                    "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/5-other-galaxies.m4a",
-                    "public": "https://inoverourheadsshow.com/episodes/5-other-galaxies.m4a"
+                    "public": "http://inoverourheadsshow.com/episodes/5-other-galaxies.m4a"
                 },
                 "notes": {
                     "source": "shownotes/5-other-galaxies.md",
-                    "public": "https://inoverourheadsshow.com/shownotes/5-other-galaxies.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/5-other-galaxies.html"
                 }
             }
         }, {
@@ -144,19 +134,17 @@
                 "number": 6,
                 "title": "Darwin's voyage to the Galapagos",
                 "description": "The guys consider the exciting origin of the theory of evolution.",
-                "pubDate": "2015-01-07T20:00:00",
-                "coverImage": "/images/6-galapagos.jpg",
-                "photoCredit": "https://www.flickr.com/photos/aftab/"
+                "pubDate": "2015-01-07T20:00:00"
             },
             "content": {
                 "audio": {
-                    "source": "https://download.soundcloud.com/whatever",
+                    "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/6-galapagos.m4a",
-                    "public": "https://inoverourheadsshow.com/episodes/6-galapagos.m4a"
+                    "public": "http://inoverourheadsshow.com/episodes/6-galapagos.m4a"
                 },
                 "notes": {
                     "source": "shownotes/6-galapagos.md",
-                    "public": "https://inoverourheadsshow.com/shownotes/6-galapagos.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/6-galapagos.html"
                 }
             }
         }, {
@@ -165,19 +153,17 @@
                 "number": 7,
                 "title": "Lightning",
                 "description": "Luke and Seth speculate on the nature of lightning and how on earth Ben Franklin survived his little experiment.",
-                "pubDate": "2015-02-05T20:00:00",
-                "coverImage": "/images/7-lightning.jpg",
-                "photoCredit": "https://www.flickr.com/photos/bossco/"
+                "pubDate": "2015-02-05T20:00:00"
             },
             "content": {
                 "audio": {
-                    "source": "https://download.soundcloud.com/whatever",
+                    "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/7-lightning.m4a",
-                    "public": "https://inoverourheadsshow.com/episodes/7-lightning.m4a"
+                    "public": "http://inoverourheadsshow.com/episodes/7-lightning.m4a"
                 },
                 "notes": {
                     "source": "shownotes/7-lightning.md",
-                    "public": "https://inoverourheadsshow.com/shownotes/7-lightning.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/7-lightning.html"
                 }
             }
         }, {
@@ -186,19 +172,17 @@
                 "number": 8,
                 "title": "Eggs",
                 "description": "Ah, the source of (some) life! Luke and Seth review what they know about Mother Nature's life nuggets as well as the things they didn't know they didn't know.",
-                "pubDate": "2015-02-19T20:00:00",
-                "coverImage": "/images/8-eggs.jpg",
-                "photoCredit": "https://www.flickr.com/photos/infomastern/"
+                "pubDate": "2015-02-19T20:00:00"
             },
             "content": {
                 "audio": {
-                    "source": "https://download.soundcloud.com/whatever",
+                    "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/8-eggs.m4a",
-                    "public": "https://inoverourheadsshow.com/episodes/8-eggs.m4a"
+                    "public": "http://inoverourheadsshow.com/episodes/8-eggs.m4a"
                 },
                 "notes": {
                     "source": "shownotes/8-eggs.md",
-                    "public": "https://inoverourheadsshow.com/shownotes/8-eggs.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/8-eggs.html"
                 }
             }
         }, {
@@ -207,19 +191,17 @@
                 "number": 9,
                 "title": "Aquifers",
                 "description": "Groundwater. You like it. We like it. Seth and Luke try their best to explain where it comes from and how it works.",
-                "pubDate": "2015-02-27T20:00:00",
-                "coverImage": "/images/9-aquifers.jpg",
-                "photoCredit": "https://www.flickr.com/photos/ealaspada/"
+                "pubDate": "2015-02-27T20:00:00"
             },
             "content": {
                 "audio": {
-                    "source": "https://download.soundcloud.com/whatever",
+                    "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/9-aquifers.m4a",
-                    "public": "https://inoverourheadsshow.com/episodes/9-aquifers.m4a"
+                    "public": "http://inoverourheadsshow.com/episodes/9-aquifers.m4a"
                 },
                 "notes": {
                     "source": "shownotes/9-aquifers.md",
-                    "public": "https://inoverourheadsshow.com/shownotes/9-aquifers.html"
+                    "public": "http://inoverourheadsshow.com/shownotes/9-aquifers.html"
                 }
             }
         }, {
