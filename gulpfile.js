@@ -23,7 +23,10 @@ var paths = {
     }
 };
 
-gulp.task('default', ['templates', 'favicon', 'styles', 'js', 'images']);
+gulp.task('default', ['templates', 'favicon', 'styles', 'js', 'images'], function () {
+    return gulp.src('./CNAME')
+        .pipe(gulp.dest('./public'));
+});
 
 gulp.task('episodes', function () {
     return gulp.src('./episodes/*')
