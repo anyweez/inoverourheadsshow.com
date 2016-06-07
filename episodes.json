@@ -223,6 +223,25 @@
                     "public": "http://inoverourheadsshow.com/shownotes/10-antimatter.html"
                 }
             }
+        }, {
+            "info": {
+                "id": "11-napalm",
+                "number": 11,
+                "title": "Napalm",
+                "description": "The guys explore napalm and its place in the modern world as a weapon of war.",
+                "pubDate": "2015-06-07T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/11-napalm.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/11-napalm.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/11-napalm.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/11-napalm.html"
+                }
+            }
         }
     ]
 }
