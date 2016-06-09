@@ -242,6 +242,44 @@
                     "public": "http://inoverourheadsshow.com/shownotes/11-napalm.html"
                 }
             }
+        }, {
+            "info": {
+                "id": "12-tornadoes",
+                "number": 12,
+                "title": "Tornadoes",
+                "description": "When it gets windy in America.",
+                "pubDate": "2015-06-09T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/12-tornadoes.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/12-tornadoes.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/12-tornadoes.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/12-tornadoes.html"
+                }
+            }
+        }, {
+            "info": {
+                "id": "13-hibernation",
+                "number": 13,
+                "title": "Hibernation",
+                "description": "It's basically sleeping, but for bears.",
+                "pubDate": "2015-06-10T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/13-hibernation.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/13-hibernation.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/13-hibernation.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/13-hibernation.html"
+                }
+            }
         }
     ]
 }
