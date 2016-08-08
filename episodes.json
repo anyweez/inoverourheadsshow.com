@@ -280,6 +280,25 @@
                     "public": "http://inoverourheadsshow.com/shownotes/13-hibernation.html"
                 }
             }
+        }, {
+            "info": {
+                "id": "14-agrarian-revolution",
+                "number": 14,
+                "title": "Agrarian Revolution",
+                "description": "The greatest thing until sliced bread...sort of.",
+                "pubDate": "2016-08-08T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/14-agrarian-revolution.m4a",
+                    "public": "http://inoverourheadsshow.com/episodes/14-agrarian-revolution.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/14-agrarian-revolution.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/14-agrarian-revolution.html"
+                }
+            }
         }
     ]
 }

@@ -1,10 +1,18 @@
+# Get the latest content and code
 git pull
 npm install
 
+# Compile static assets and copy episodes
+gulp episodes
+gulp
+
+# Generate the feed
 cp public/feed.rss public/feed.old.rss
 ~/git/pods/cli.js feed > public/feed.rss
 
+# Generate content.json (not currently used)
 cp public/content.json public/content.old.json
 ~/git/pods/cli.js content > public/content.json
 
+# Make episodes readable
 chmod 644 public/episodes/*.m4a
