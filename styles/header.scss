@@ -9,7 +9,8 @@ header {
         height: $logo-dim;
         align-self: center;
         
-        margin: ($header-height - $logo-dim) / 2;
+        margin: ($header-height - $logo-dim);
+        margin-right: ($header-height - $logo-dim) * 1.25;
         
         border: 2px solid #ccc;
     }
