@@ -45,7 +45,7 @@
                 "audio": {
                     "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/1-power-steering.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/1-power-steering.m4a"
+                    "public": "/episodes/1-power-steering.m4a"
                 },
                 "notes": {
                     "source": "shownotes/1-power-steering.md",
@@ -64,7 +64,7 @@
                 "audio": {
                     "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/2-yetis.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/2-yetis.m4a"
+                    "public": "/episodes/2-yetis.m4a"
                 },
                 "notes": {
                     "source": "shownotes/2-yetis.md",
@@ -83,7 +83,7 @@
                 "audio": {
                     "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/3-french-revolution.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/3-french-revolution.m4a"
+                    "public": "/episodes/3-french-revolution.m4a"
                 },
                 "notes": {
                     "source": "shownotes/3-french-revolution.md",
@@ -102,7 +102,7 @@
                 "audio": {
                     "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/4-3d-printing.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/4-3d-printing.m4a"
+                    "public": "/episodes/4-3d-printing.m4a"
                 },
                 "notes": {
                     "source": "shownotes/4-3d-printing.md",
@@ -121,7 +121,7 @@
                 "audio": {
                     "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/5-other-galaxies.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/5-other-galaxies.m4a"
+                    "public": "/episodes/5-other-galaxies.m4a"
                 },
                 "notes": {
                     "source": "shownotes/5-other-galaxies.md",
@@ -140,7 +140,7 @@
                 "audio": {
                     "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/6-galapagos.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/6-galapagos.m4a"
+                    "public": "/episodes/6-galapagos.m4a"
                 },
                 "notes": {
                     "source": "shownotes/6-galapagos.md",
@@ -159,7 +159,7 @@
                 "audio": {
                     "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/7-lightning.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/7-lightning.m4a"
+                    "public": "/episodes/7-lightning.m4a"
                 },
                 "notes": {
                     "source": "shownotes/7-lightning.md",
@@ -178,7 +178,7 @@
                 "audio": {
                     "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/8-eggs.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/8-eggs.m4a"
+                    "public": "/episodes/8-eggs.m4a"
                 },
                 "notes": {
                     "source": "shownotes/8-eggs.md",
@@ -197,7 +197,7 @@
                 "audio": {
                     "source": "http://download.soundcloud.com/whatever",
                     "local": "public/episodes/9-aquifers.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/9-aquifers.m4a"
+                    "public": "/episodes/9-aquifers.m4a"
                 },
                 "notes": {
                     "source": "shownotes/9-aquifers.md",
@@ -216,7 +216,7 @@
                 "audio": {
                     "source": "https://download.soundcloud.com/whatever",
                     "local": "public/episodes/10-antimatter.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/10-antimatter.m4a"
+                    "public": "/episodes/10-antimatter.m4a"
                 },
                 "notes": {
                     "source": "shownotes/10-antimatter.md",
@@ -235,7 +235,7 @@
                 "audio": {
                     "source": "https://download.soundcloud.com/whatever",
                     "local": "public/episodes/11-napalm.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/11-napalm.m4a"
+                    "public": "/episodes/11-napalm.m4a"
                 },
                 "notes": {
                     "source": "shownotes/11-napalm.md",
@@ -254,7 +254,7 @@
                 "audio": {
                     "source": "https://download.soundcloud.com/whatever",
                     "local": "public/episodes/12-tornadoes.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/12-tornadoes.m4a"
+                    "public": "/episodes/12-tornadoes.m4a"
                 },
                 "notes": {
                     "source": "shownotes/12-tornadoes.md",
@@ -273,7 +273,7 @@
                 "audio": {
                     "source": "https://download.soundcloud.com/whatever",
                     "local": "public/episodes/13-hibernation.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/13-hibernation.m4a"
+                    "public": "/episodes/13-hibernation.m4a"
                 },
                 "notes": {
                     "source": "shownotes/13-hibernation.md",
@@ -292,11 +292,30 @@
                 "audio": {
                     "source": "https://download.soundcloud.com/whatever",
                     "local": "public/episodes/14-agrarian-revolution.m4a",
-                    "public": "http://inoverourheadsshow.com/episodes/14-agrarian-revolution.m4a"
+                    "public": "/episodes/14-agrarian-revolution.m4a"
                 },
                 "notes": {
                     "source": "shownotes/14-agrarian-revolution.md",
                     "public": "http://inoverourheadsshow.com/shownotes/14-agrarian-revolution.html"
+                }
+            }
+        }, {
+            "info": {
+                "id": "15-deserts",
+                "number": 15,
+                "title": "Deserts",
+                "description": "A bunch of sand with a cactus in the middle, right?",
+                "pubDate": "2016-08-31T20:00:00"
+            },
+            "content": {
+                "audio": {
+                    "source": "https://download.soundcloud.com/whatever",
+                    "local": "public/episodes/15-deserts.m4a",
+                    "public": "/episodes/15-deserts.m4a"
+                },
+                "notes": {
+                    "source": "shownotes/15-deserts.md",
+                    "public": "http://inoverourheadsshow.com/shownotes/15-deserts.html"
                 }
             }
         }
